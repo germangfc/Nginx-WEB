@@ -70,6 +70,10 @@ Abrimos la terminal OpenSSL y ejecutamos el siguiente comando, situados en un di
 \
     <img src="./images/openssl.png" max-width="80%">
 
+Estos ficheros **seguro.crt** y **seguro.key** debemos colocarlos en un directorio llamado **certs**:  
+
+<img src="./images/certsdir.png">
+
 Para proteger nuestro directorio ***privado*** del dominio **seguro.net**, primero generaremos una clave con ***Openssl***:  
 
 ```openssl passwd```
