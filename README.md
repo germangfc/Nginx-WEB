@@ -27,7 +27,7 @@ Para el host que lleva seguridad, se deben añadir mas opciones, para consultarl
 
 En los ficheros de configuración de los hosts se indican además, las personalizaciones de las páginas que mostrarán los mensajes de error:
 
-<img src="./images/custom_errors.png" width="60%">  
+<img src="./images/custom_errors.png" width="80%">  
 
 Podemos ver [aquí](./websites/german.com/errors/404.html) como ejemplo, el código html de uno de estos errores.
 
@@ -41,7 +41,7 @@ A continuación creamos el fichero docker-compose "***docker-compose.yml***" par
 
 <img src="./images/docker-compose.png" width="80%"> 
 
-Utilizaremos un script para automatizar las tareas que necesitamos para habilitar los hosts virtuales y la seguridad. 
+Utilizaremos un script para automatizar las tareas que necesitamos para habilitar los hosts virtuales. 
 
 Este script se ejecutará al arrancar el contenedor, al mapear el directorio donde se encuentran nuestros scripts al directorio **/docker-entrypoint.d** del propio contenedor. 
 
@@ -51,7 +51,7 @@ Se crean enlaces simbólicos (si no existen ya) del fichero de configuración de
 
 También debemos habilitar en el fichero .hosts del sistema las direcciones para nuestros hosts virtuales:
 
-<img src="./images/hosts.png" width="50%"> 
+<img src="./images/hosts.png" width="70%"> 
 
 Desplegamos nuestro servidor en un contenedor, ejecutando:  
 ```docker-compose up -d```
